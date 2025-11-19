@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+        .buttons{
+            /* Basic styling */
+            background-color: #007bff; /* Primary blue color */
+            color: white;
+            border: none;
+            border-radius: 8px; /* Slightly rounded corners */
+            padding: 12px 24px; /* Ample padding for a comfortable click area */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+            font-size: 5vw;
+            font-weight: 600; /* Semi-bold text */
+            cursor: pointer; /* Indicates interactivity */
+            text-decoration: none; /* Removes underline for <a> elements */
+            display: inline-block; /* Allows for proper padding and sizing */
+            transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions for hover */
+
+            /* Optional: Shadow for depth */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            width: 80vw;
+            height: 25vh;
+        }
+
+
+        #Youtube {
+            background-color: #FF0000;
+        }
+
+        #Youtube:hover {
+            background-color: #FFFFFF;
+            color: #FF0000;
+        }
+        
+        #Insta {
+            background-color: #C13584;
+        }
+
+        #Insta:hover {
+            background-color: #FFFFFF;
+            color: #833AB4;
+        }
+        
+        #Facebook {
+            background-color: #1877F2;
+        }
+
+        #Facebook:hover {
+            background-color: #FFFFFF;
+            color: #1877F2;
+        }
+
+        #X{
+            background-color: #000000;
+        }
+       
+        #X:hover{
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+       
+
+        .buttons:hover {
+            background-color: #ffff; /* Darker blue on hover */
+            color: #007bff;
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
+
+        .divs {
+            padding: .5vh;
+        }
+    </style>
+    <body>
+        <center>
+            <div class="divs">
+                <a href="https://www.youtube.com/@sschaitanya90">
+                    <button class="buttons" id="Youtube">
+                        Youtube
+                    </button>
+                </a>
+            </div>
+
+            <div class="divs">
+                <a href="https://www.youtube.com/@sschaitanya90">
+                    <button class="buttons" id="Insta">
+                        Instagram
+                    </button>
+                </a>
+            </div>
+
+            <div class="divs">
+                <a href="https://facebook.com/profile.php?id=100064674463337&mibextid=ZbWKwL">
+                    <button class="buttons" id="Facebook">
+                        Facebook
+                    </button>
+                </a>
+            </div>
+
+            <div class="divs">
+                <a href="https://twitter.com/SaichaitanyaSr1?t=i3WQ11eTTSnz0UkCGWPNJA&s=09">
+                    <button class="buttons" id="X">
+                        X
+                    </button>
+                </a>
+            </div>
+
+        </center>
+    </body>
+    <script>
+        function redirect(site){
+
+            switch(site){
+            case "Youtube":
+                window.location.href = "#";
+                break;
+            case "Instagram":
+                window.location.href = "https://www.instagram.com/ssaichaitanya?igshid=NGExMmI2YTkyZg==";
+                break;
+            }
+        }
+    </script>
+</html>
